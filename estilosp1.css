@@ -1,0 +1,205 @@
+body{
+	background: #02010a;
+	font-family: Dancing Script;
+	color: white;
+}
+
+header
+{
+	background-color: #5b7989;
+	overflow: hidden;
+	border-radius: 10px 10px 0px 0px;
+	animation-name: header-animacion;
+	animation-duration: 2s;
+}
+
+@keyframes header-animacion {
+0% {margin-top: 150%;
+}
+60% {margin-top: -5%;
+}
+100% {margin-top: 0%;
+}
+}
+
+img{
+	-webkit-box-shadow:0 1px 2px #02010a;
+	-moz-box-shadow:0 1px 2px #02010a;
+	box-shadow:0 1px 2px #02010a;
+	max-width: 100%;
+}
+
+#cabecera{
+	color:black;
+}
+
+#titulo {
+	color:#f2f2f2;
+	line-height:30px;
+	text-shadow: 2px 2px #02010a;
+	font-size: 30px;
+	float:left;
+	background-color: #5b7989;
+	width: 50%;
+	text-align: center;
+}
+#menu{
+	float:right;
+	line-height:90px;
+	background-color: #5b7989;
+	width: 50%;
+	text-align: right;
+}
+
+#menu nav a {
+	color:#fff;
+	/*text-decoration:none;*/
+	font-size:20px;
+	padding: 10px 20px;
+}
+article
+{
+	box-sizing: border-box;
+	background-color: #C6d5c5;
+	padding: 2%;
+}
+
+footer{
+	clear: both;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #C6d5c5;
+	height: 10%;
+}
+
+#pie{
+	width:95%; /* Establecemos que el ancho sera del 90% */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+	color:black;
+}
+
+#contacto{
+	width: 25%;
+	float: left;
+	font-size: 30px;
+
+}
+#contacto p{
+	font-size: 15px;
+}
+#terminos{
+	width: 25%;
+	float: left;
+	font-size: 30px;
+}
+#terminos p{
+	font-size: 15px;
+}
+#derechos{
+	width: 25%;
+	float: left;
+	font-size: 30px;
+}
+#derechos p{
+	font-size: 15px;
+}
+#redes{
+	width: 25%;
+	float: left;
+	font-size: 30px;
+}
+#redes table{
+	font-size: 15px;
+	border-collapse:collapse;
+	border: none;
+	text-align: left;
+}
+#redes img{
+	width:20%;
+}
+
+	#columna1
+	{
+	background-color: #82c3a6;
+	width: 100%;
+	text-align: center;
+  }
+	#columna1 img{
+		width: 700px;
+		height: 200px;
+	}
+	#columna2
+	{
+	background-color: #d5c75f;
+	border: 1px;
+	width: 50%;
+	float: left;
+	text-align: center;
+	}
+	#columna2 img{
+		width: 500px;
+		height: 200px;
+		-webkit-box-shadow:0 1px 2px #82c3a6;
+    -moz-box-shadow:0 1px 2px #82c3a6;
+    box-shadow:0 1px 2px #82c3a6;
+	}
+	#columna2 img:hover{
+		transform: rotate(10deg);
+			}
+	#columna3
+	{
+	background-color: #d5c75f;
+	border: 1px;
+	width: 50%;
+	float: right;
+	text-align: center;
+	}
+	#columna3 img{
+		width: 500px;
+		height: 200px;
+		-webkit-box-shadow:0 1px 2px #82c3a6;
+    -moz-box-shadow:0 1px 2px #82c3a6;
+    box-shadow:0 1px 2px #82c3a6;
+	}
+	#columna3 img:hover{
+		transform: translate(20px,-5px);
+
+	}
+/*Para versión Desktop*/
+@media (min-width: 900px){
+	#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+/*Para versión Móvil*/
+@media (max-width: 900px){
+	#columna1
+	{
+	width: 100%;
+	}
+	#columna2
+	{
+	width: 100%;
+	}
+	#columna3
+	{
+	width: 100%;
+	}
+	#contacto{width: 100%;}
+	#terminos{width: 100%;}
+	#redes{width: 100%;}
+	#derechos{width: 100%;}
+	#titulo{width: 100%; font-size: 20px;}
+	#menu{width: 100%;text-align: center;}
+	#menu nav a{font-size: 10px;}
+	header
+	{
+	width:100%;
+	}
+
+	footer{
+		width: 100%;
+	}
+}
